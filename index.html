@@ -1,0 +1,50 @@
+<html>
+    <head><title>parallax</title>
+        <link rel="stylesheet" text="text/css" href="parallax.css">
+    </head>
+    <body>
+        <section>
+            <img src="stars.png" id="star">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountainb">
+            <h2 id="text">MOON KNIGHT</h2>
+            <a href="#" id="btn">Explore</a>
+            <img src="mountains_front.png" id="mountainf">
+            <img src='knight.png' id='knight'>
+      
+            
+        </section>
+        <div class="sec">
+            <h2>PARALLAX </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et dicta at repudiandae nemo fuga porro aspernatur ipsa suscipit temporibus vel, vitae voluptates totam ducimus debitis reiciendis, dignissimos voluptas molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime aut veritatis, ex ut expedita non voluptas quaerat modi necessitatibus dignissimos numquam impedit assumenda rerum veniam earum, aspernatur at Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium laboriosam impedit nesciunt alias nam consequatur eum quia, id nobis quod esse officiis repellendus nemo ad dignissimos magni amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque libero laboriosam labore hic nam, impedit blanditiis reiciendis voluptatibus eos, illum quos perferendis culpa ut dignissimos magni amet ex ea optio!Lorem<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et dicta at repudiandae nemo fuga porro aspernatur ipsa suscipit temporibus vel, vitae voluptates totam ducimus debitis reiciendis, dignissimos voluptas molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime aut veritatis, ex ut expedita non voluptas quaerat modi necessitatibus dignissimos numquam impedit assumenda rerum veniam earum, aspernatur at Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium laboriosam impedit nesciunt alias nam consequatur eum quia, id nobis quod esse officiis repellendus nemo ad dignissimos magni amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque libero laboriosam labore hic nam, impedit blanditiis reiciendis voluptatibus eos, illum quos perferendis culpa ut dignissimos magni amet ex ea optio!Lorem<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et dicta at repudiandae nemo fuga porro aspernatur ipsa suscipit temporibus vel, vitae voluptates totam ducimus debitis reiciendis, dignissimos voluptas molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime aut veritatis, ex ut expedita non voluptas quaerat modi necessitatibus dignissimos numquam impedit assumenda rerum veniam earum, aspernatur at Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium laboriosam impedit nesciunt alias nam consequatur eum quia, id nobis quod esse officiis repellendus nemo ad dignissimos magni amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque libero laboriosam labore hic nam, impedit blanditiis reiciendis voluptatibus eos, illum quos perferendis culpa ut dignissimos magni amet ex ea optio!Lorem<br><br><br>
+            </p>
+        </div>
+        <script>
+            let stars = document.getElementById('star')
+            let moon = document.getElementById('moon')
+            let mountains_behind = document.getElementById('mountainb')
+            let text = document.getElementById('text')
+            let btn = document.getElementById('btn')
+            let mountains_front = document.getElementById('mountainf')
+            let knight = document.getElementById('knight')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY
+                stars.style.left = value*0.25 + 'px';
+                moon.style.top = value*1.05 + 'px';
+                mountains_behind.style.top = value*0.5 + 'px';
+                mountains_front.style.top = value*0 + 'px';
+                text.style.marginRight = value*2.25 + 'px';
+                text.style.marginTop = value*0.05 + 'px';
+                btn.style.marginTop = value*1.05 + 'px';
+                knight.style.marginTop=value*-1.3+'px';
+ 
+                
+            })
+        </script>
+
+
+    </body>
+</html>
